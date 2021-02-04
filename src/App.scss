@@ -1,0 +1,89 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+// colors
+$orange: rgb(255, 167, 5);
+$blue: rgb(91, 206, 245);
+$purple: purple;
+$white: #ffffff;
+$load-more: rgb(156, 88, 88);
+$body-background: #f2f2f2;
+
+.orange {
+	background-color:$orange ;
+	color:$white;
+}
+.blue {
+	background-color: $blue;
+	color: $white;
+}
+.purple {
+	background-color: $purple;
+	color:$white;
+}
+.post-date {
+	padding: 0.75rem 1.25rem;
+}
+.item-heading {
+	padding: 0 1.25rem;
+}
+.item-box {
+	
+	padding: 1rem;
+	position: relative;
+}
+.btn-teritary {
+	text-transform: uppercase;
+	background-color: transparent;
+	color:$white;
+	border: solid 1px $white;
+	border-radius: 3px;
+	font-size: 10px;
+	padding: 5px 10px;
+	font-weight: bold;
+}
+.read-more-box {
+	padding-left: 1rem;
+	position: absolute;
+	bottom: 1rem;
+}
+.read-more{
+    background: transparent;
+    border: solid 1px $load-more;
+    color: $load-more;
+    border-radius: 3px;
+    outline: none;
+  }
+
+body {
+	background: $body-background;
+}
+@media only screen and (min-width: 320px) {
+    .item-box{
+        height: auto
+    }
+    .read-more-box{
+        position: relative;
+        padding-top: 1rem
+    }
+}
+@media only screen and (min-width: 576px) {
+    .item-box{
+        height: 480px;
+    }
+    .read-more-box{
+        position: absolute;
+        
+    }
+}
+@media only screen and (min-width: 576px) {
+    .item-box{
+        height: 600px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .item-box{
+        height: 380px;
+    }
+}
+
+
